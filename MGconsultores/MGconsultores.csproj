@@ -49,6 +49,8 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -167,13 +169,44 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="AspNetRoles.cs">
+      <DependentUpon>MGconsultoresModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AspNetUserClaims.cs">
+      <DependentUpon>MGconsultoresModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AspNetUserLogins.cs">
+      <DependentUpon>MGconsultoresModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AspNetUsers.cs">
+      <DependentUpon>MGconsultoresModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="C__MigrationHistory.cs">
+      <DependentUpon>MGconsultoresModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="MGconsultoresModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MGconsultoresModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MGconsultoresModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MGconsultoresModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MGconsultoresModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MGconsultoresModel.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\ComentarioModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -188,20 +221,143 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="images\9d63430d-8f5d-4697-9139-18d3979ac77d.jpg" />
+    <Content Include="images\android-126x75.jpg" />
+    <Content Include="images\aplicaciones-diseo-web1.png" />
+    <Content Include="images\aplicaciones-diseño-web1.png" />
+    <Content Include="images\aplicaciones-web.png" />
+    <Content Include="images\aplicaiones-online-orig.png" />
+    <Content Include="images\apps-moviles-peru2-1.jpg" />
+    <Content Include="images\aws-126x75.jpg" />
+    <Content Include="images\banner-img-custom-developement.jpg" />
+    <Content Include="images\carlos-calderon-de-la-barca.jpg" />
+    <Content Include="images\carrito-de-compras.png" />
+    <Content Include="images\clientes-satisfechos-sistemas.jpg" />
+    <Content Include="images\cloud-hosting-for-businesses.jpg" />
+    <Content Include="images\consultor-it.png" />
+    <Content Include="images\default-image.jpg" />
+    <Content Include="images\desarrollo-aplicaciones-moviles.png" />
+    <Content Include="images\desarrollo-aplicaciones-moviles1.png" />
+    <Content Include="images\erp-peru.jpg" />
+    <Content Include="images\etapas-desarrollo.png" />
+    <Content Include="images\favicon.ico" />
+    <Content Include="images\fidelizacion-de-clientes.jpg" />
+    <Content Include="images\fondo-1.jpg" />
+    <Content Include="images\fondo2a.jpg" />
+    <Content Include="images\ios-126x75.jpg" />
+    <Content Include="images\ios-android-development.jpg" />
+    <Content Include="images\java-126x75.jpg" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\logoIco.ico" />
+    <Content Include="images\logoIco.png" />
+    <Content Include="images\macbook-ecommerce.png" />
+    <Content Include="images\magento.jpg" />
+    <Content Include="images\microsoft-126x75.jpg" />
+    <Content Include="images\microsoft-126x751.jpg" />
+    <Content Include="images\miguel-gargurevich.jpg" />
+    <Content Include="images\mobile-app-perspective.png" />
+    <Content Include="images\mobile-ecommerce-1.png" />
+    <Content Include="images\natalie-alfaro.jpg" />
+    <Content Include="images\net-126x75.jpg" />
+    <Content Include="images\nodejs-126x75.jpg" />
+    <Content Include="images\opencart.jpg" />
+    <Content Include="images\oracle-126x75.jpg" />
+    <Content Include="images\perspective-mockup-psd-iphone4-iphone5-ipad.jpg" />
+    <Content Include="images\perspective_opt.png" />
+    <Content Include="images\php-126x75.jpg" />
+    <Content Include="images\prestashop.jpg" />
+    <Content Include="images\python-126x75.jpg" />
+    <Content Include="images\reuniones-de-negocios1.jpg" />
+    <Content Include="images\servicios-software-peru.jpg" />
+    <Content Include="images\shopify.jpg" />
+    <Content Include="images\social-media-girl1.png" />
+    <Content Include="images\sqlserver-126x75.jpg" />
+    <Content Include="images\tienda-01.png" />
+    <Content Include="images\tienda-02.png" />
+    <Content Include="images\tienda-03.png" />
+    <Content Include="images\tienda-04.png" />
+    <Content Include="images\tienda-virtual-mobile-1024x384.jpg" />
+    <Content Include="images\tienda-virtual-tablet-1024x384.jpg" />
+    <Content Include="images\tiendas-virtuales-visa-1024x282.jpg" />
+    <Content Include="images\tiendas-virtuales-web-1024x282.jpg" />
+    <Content Include="images\tiendas-virtuales.jpg" />
+    <Content Include="images\web-corporativa1.png" />
+    <Content Include="images\web-responsive.png" />
+    <Content Include="images\woocommerce.jpg" />
+    <Content Include="images\wqe-min.jpg" />
+    <Content Include="MGconsultoresModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MGconsultoresModel.edmx</DependentUpon>
+      <LastGenOutput>MGconsultoresModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="MGconsultoresModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MGconsultoresModel.edmx</DependentUpon>
+      <LastGenOutput>MGconsultoresModel.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <EntityDeploy Include="MGconsultoresModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>MGconsultoresModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="MGconsultoresModel.edmx.diagram">
+      <DependentUpon>MGconsultoresModel.edmx</DependentUpon>
+    </Content>
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="Web.config" />
+    <Content Include="Scripts\nicepage.js" />
+    <Content Include="Content\Aplicaciones-Moviles.css" />
+    <Content Include="Content\Aplicaciones-Web.css" />
+    <Content Include="Content\Calidad-y-Garantía.css" />
+    <Content Include="Content\Como-Trabajamos.css" />
+    <Content Include="Content\Consultoria.css" />
+    <Content Include="Content\Contacto.css" />
+    <Content Include="Content\Cultura.css" />
+    <Content Include="Content\Desarrollo-de-Software.css" />
+    <Content Include="Content\Diseño-de-Paginas-Web.css" />
+    <Content Include="Content\Hosting-y-Dominio.css" />
+    <Content Include="Content\index.css" />
+    <Content Include="Content\Intranet-y-Extranet.css" />
+    <Content Include="Content\nicepage.css" />
+    <Content Include="Content\Nosotros.css" />
+    <Content Include="Content\Pagina-Web-Catalogo.css" />
+    <Content Include="Content\Pagina-Web-Corporativa.css" />
+    <Content Include="Content\Soporte-y-Mantenimiento.css" />
+    <Content Include="Content\Tiendas-Virtuales.css" />
+    <Content Include="Views\Home\Aplicaciones-Moviles.html" />
+    <Content Include="Views\Home\Aplicaciones-Web.html" />
+    <Content Include="Views\Home\Calidad-y-Garantía.html" />
+    <Content Include="Views\Home\Como-Trabajamos.html" />
+    <Content Include="Views\Home\Consultoria.html" />
+    <Content Include="Views\Home\Contacto.html" />
+    <Content Include="Views\Home\Cultura.html" />
+    <Content Include="Views\Home\Desarrollo-de-Software.html" />
+    <Content Include="Views\Home\Diseño-de-Paginas-Web.html" />
+    <Content Include="Views\Home\Hosting-y-Dominio.html" />
+    <Content Include="Views\Home\index.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\Home\Intranet-y-Extranet.html" />
+    <Content Include="Views\Home\Nosotros.html" />
+    <Content Include="Views\Home\Pagina-Web-Catalogo.html" />
+    <Content Include="Views\Home\Pagina-Web-Corporativa.html" />
+    <Content Include="Views\Home\Soporte-y-Mantenimiento.html" />
+    <Content Include="Views\Home\Tiendas-Virtuales.html" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -235,6 +391,7 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Home\Index - Copia.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -252,9 +409,15 @@
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
