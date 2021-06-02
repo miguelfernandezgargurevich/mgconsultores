@@ -16,7 +16,7 @@
 
 .u-section-1 .u-image-1 {
   min-height: 527px;
-  background-image: url("images/aplicaciones-web.png");
+  background-image: url("../images/aplicaciones-web.png");
   background-position: 50% 50%;
   animation-duration: 1000ms;
 }

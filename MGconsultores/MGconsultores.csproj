@@ -221,70 +221,201 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="images\9d63430d-8f5d-4697-9139-18d3979ac77d.jpg" />
-    <Content Include="images\android-126x75.jpg" />
-    <Content Include="images\aplicaciones-diseo-web1.png" />
-    <Content Include="images\aplicaciones-diseño-web1.png" />
-    <Content Include="images\aplicaciones-web.png" />
-    <Content Include="images\aplicaiones-online-orig.png" />
-    <Content Include="images\apps-moviles-peru2-1.jpg" />
-    <Content Include="images\aws-126x75.jpg" />
-    <Content Include="images\banner-img-custom-developement.jpg" />
-    <Content Include="images\carlos-calderon-de-la-barca.jpg" />
-    <Content Include="images\carrito-de-compras.png" />
-    <Content Include="images\clientes-satisfechos-sistemas.jpg" />
-    <Content Include="images\cloud-hosting-for-businesses.jpg" />
-    <Content Include="images\consultor-it.png" />
-    <Content Include="images\default-image.jpg" />
-    <Content Include="images\desarrollo-aplicaciones-moviles.png" />
-    <Content Include="images\desarrollo-aplicaciones-moviles1.png" />
-    <Content Include="images\erp-peru.jpg" />
-    <Content Include="images\etapas-desarrollo.png" />
-    <Content Include="images\favicon.ico" />
-    <Content Include="images\fidelizacion-de-clientes.jpg" />
-    <Content Include="images\fondo-1.jpg" />
-    <Content Include="images\fondo2a.jpg" />
-    <Content Include="images\ios-126x75.jpg" />
-    <Content Include="images\ios-android-development.jpg" />
-    <Content Include="images\java-126x75.jpg" />
-    <Content Include="images\logo.png" />
-    <Content Include="images\logoIco.ico" />
-    <Content Include="images\logoIco.png" />
-    <Content Include="images\macbook-ecommerce.png" />
-    <Content Include="images\magento.jpg" />
-    <Content Include="images\microsoft-126x75.jpg" />
-    <Content Include="images\microsoft-126x751.jpg" />
-    <Content Include="images\miguel-gargurevich.jpg" />
-    <Content Include="images\mobile-app-perspective.png" />
-    <Content Include="images\mobile-ecommerce-1.png" />
-    <Content Include="images\natalie-alfaro.jpg" />
-    <Content Include="images\net-126x75.jpg" />
-    <Content Include="images\nodejs-126x75.jpg" />
-    <Content Include="images\opencart.jpg" />
-    <Content Include="images\oracle-126x75.jpg" />
-    <Content Include="images\perspective-mockup-psd-iphone4-iphone5-ipad.jpg" />
-    <Content Include="images\perspective_opt.png" />
-    <Content Include="images\php-126x75.jpg" />
-    <Content Include="images\prestashop.jpg" />
-    <Content Include="images\python-126x75.jpg" />
-    <Content Include="images\reuniones-de-negocios1.jpg" />
-    <Content Include="images\servicios-software-peru.jpg" />
-    <Content Include="images\shopify.jpg" />
-    <Content Include="images\social-media-girl1.png" />
-    <Content Include="images\sqlserver-126x75.jpg" />
-    <Content Include="images\tienda-01.png" />
-    <Content Include="images\tienda-02.png" />
-    <Content Include="images\tienda-03.png" />
-    <Content Include="images\tienda-04.png" />
-    <Content Include="images\tienda-virtual-mobile-1024x384.jpg" />
-    <Content Include="images\tienda-virtual-tablet-1024x384.jpg" />
-    <Content Include="images\tiendas-virtuales-visa-1024x282.jpg" />
-    <Content Include="images\tiendas-virtuales-web-1024x282.jpg" />
-    <Content Include="images\tiendas-virtuales.jpg" />
-    <Content Include="images\web-corporativa1.png" />
-    <Content Include="images\web-responsive.png" />
-    <Content Include="images\woocommerce.jpg" />
-    <Content Include="images\wqe-min.jpg" />
+    <Content Include="images\9d63430d-8f5d-4697-9139-18d3979ac77d.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\android-126x75.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\aplicaciones-diseo-web1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\aplicaciones-diseño-web1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\aplicaciones-web.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\aplicaiones-online-orig.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\apps-moviles-peru2-1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\aws-126x75.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\banner-img-custom-developement.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carlos-calderon-de-la-barca.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carrito-de-compras.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\clientes-satisfechos-sistemas.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\cloud-hosting-for-businesses.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\consultor-it.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\Contacto-3d.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\default-image.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\desarrollo-aplicaciones-moviles.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\desarrollo-aplicaciones-moviles1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\erp-peru.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\etapas-desarrollo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\favicon.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\fidelizacion-de-clientes.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\fondo-1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\fondo2a.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\ios-126x75.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\ios-android-development.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\java-126x75.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\logo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\logoIco.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\logoIco.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\macbook-ecommerce.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\magento.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\microsoft-126x75.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\microsoft-126x751.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\miguel-gargurevich.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\mobile-app-perspective.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\mobile-ecommerce-1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\natalie-alfaro.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\net-126x75.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\nodejs-126x75.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\opencart.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\oracle-126x75.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\perspective-mockup-psd-iphone4-iphone5-ipad.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\perspective_opt.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\php-126x75.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\prestashop.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\python-126x75.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\reuniones-de-negocios1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\servicios-software-peru.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\shopify.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\social-media-girl1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\sqlserver-126x75.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\tienda-01.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\tienda-02.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\tienda-03.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\tienda-04.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\tienda-virtual-mobile-1024x384.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\tienda-virtual-tablet-1024x384.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\tiendas-virtuales-visa-1024x282.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\tiendas-virtuales-web-1024x282.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\tiendas-virtuales.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\web-corporativa1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\web-responsive.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\woocommerce.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\wqe-min.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="MGconsultoresModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>MGconsultoresModel.edmx</DependentUpon>
@@ -336,25 +467,22 @@
     <Content Include="Content\Pagina-Web-Corporativa.css" />
     <Content Include="Content\Soporte-y-Mantenimiento.css" />
     <Content Include="Content\Tiendas-Virtuales.css" />
-    <Content Include="Views\Home\Aplicaciones-Moviles.html" />
-    <Content Include="Views\Home\Aplicaciones-Web.html" />
-    <Content Include="Views\Home\Calidad-y-Garantía.html" />
-    <Content Include="Views\Home\Como-Trabajamos.html" />
-    <Content Include="Views\Home\Consultoria.html" />
-    <Content Include="Views\Home\Contacto.html" />
-    <Content Include="Views\Home\Cultura.html" />
-    <Content Include="Views\Home\Desarrollo-de-Software.html" />
-    <Content Include="Views\Home\Diseño-de-Paginas-Web.html" />
-    <Content Include="Views\Home\Hosting-y-Dominio.html" />
-    <Content Include="Views\Home\index.html">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Views\Home\Intranet-y-Extranet.html" />
-    <Content Include="Views\Home\Nosotros.html" />
-    <Content Include="Views\Home\Pagina-Web-Catalogo.html" />
-    <Content Include="Views\Home\Pagina-Web-Corporativa.html" />
-    <Content Include="Views\Home\Soporte-y-Mantenimiento.html" />
-    <Content Include="Views\Home\Tiendas-Virtuales.html" />
+    <Content Include="Views\Home\AplicacionesMoviles.cshtml" />
+    <Content Include="Views\Home\AplicacionesWeb.cshtml" />
+    <Content Include="Views\Home\CalidadGarantia.cshtml" />
+    <Content Include="Views\Home\ComoTrabajamos.cshtml" />
+    <Content Include="Views\Home\Consultoria.cshtml" />
+    <Content Include="Views\Home\Contacto.cshtml" />
+    <Content Include="Views\Home\Cultura.cshtml" />
+    <Content Include="Views\Home\DesarrolloSoftware.cshtml" />
+    <Content Include="Views\Home\WebDesign.cshtml" />
+    <Content Include="Views\Home\HostingDominio.cshtml" />
+    <Content Include="Views\Home\IntranetExtranet.cshtml" />
+    <Content Include="Views\Home\Nosotros.cshtml" />
+    <Content Include="Views\Home\PaginaWebCatalogo.cshtml" />
+    <Content Include="Views\Home\PaginaWebCorporativa.cshtml" />
+    <Content Include="Views\Home\SoporteMantenimiento.cshtml" />
+    <Content Include="Views\Home\TiendasVirtuales.cshtml" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -391,10 +519,11 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Home\Index - Copia.cshtml" />
+    <Content Include="Views\Shared\_Menu.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Log\Error\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

@@ -21,6 +21,87 @@ namespace MGconsultores.Controllers
             return View();
         }
 
+
+        public ActionResult Consultoria()
+        {
+            return View();
+        }
+
+        public ActionResult DesarrolloSoftware()
+        {
+            return View();
+        }
+
+        public ActionResult WebDesign()
+        {
+            return View();
+        }
+
+        public ActionResult AplicacionesMoviles()
+        {
+            return View();
+        }
+
+        public ActionResult TiendasVirtuales()
+        {
+            return View();
+        }
+
+        public ActionResult IntranetExtranet()
+        {
+            return View();
+        }
+
+        public ActionResult HostingDominio()
+        {
+            return View();
+        }
+
+        public ActionResult SoporteMantenimiento()
+        {
+            return View();
+        }
+
+        public ActionResult Nosotros()
+        {
+            return View();
+        }
+
+        public ActionResult ComoTrabajamos()
+        {
+            return View();
+        }
+
+        public ActionResult CalidadGarantia()
+        {
+            return View();
+        }
+
+        public ActionResult Cultura()
+        {
+            return View();
+        }
+        
+        public ActionResult PaginaWebCorporativa()
+        {
+            return View();
+        }
+
+        public ActionResult PaginaWebCatalogo()
+        {
+            return View();
+        }
+
+        public ActionResult AplicacionesWeb()
+        {
+            return View();
+        }
+
+        public ActionResult Contacto()
+        {
+            return View();
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";

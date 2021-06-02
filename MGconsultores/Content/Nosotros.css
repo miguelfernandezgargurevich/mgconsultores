@@ -80,7 +80,7 @@
 .u-section-2 .u-image-1 {
   width: 111px;
   height: 111px;
-  background-image: url("images/miguel-gargurevich.jpg");
+  background-image: url("../images/miguel-gargurevich.jpg");
   background-position: 50% 50%;
   margin: 0 auto;
 }
@@ -106,7 +106,7 @@
 .u-section-2 .u-image-2 {
   width: 111px;
   height: 111px;
-  background-image: url("images/natalie-alfaro.jpg");
+  background-image: url("../images/natalie-alfaro.jpg");
   background-position: 50% 50%;
   margin: 0 auto;
 }
@@ -132,7 +132,7 @@
 .u-section-2 .u-image-3 {
   width: 111px;
   height: 111px;
-  background-image: url("images/carlos-calderon-de-la-barca.jpg");
+  background-image: url("../images/carlos-calderon-de-la-barca.jpg");
   background-position: 50% 50%;
   margin: 0 auto;
 }
