@@ -182,24 +182,8 @@
       <DependentUpon>MGconsultoresModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\AplicacionesMovilesController.cs" />
-    <Compile Include="Controllers\AplicacionesWebController.cs" />
-    <Compile Include="Controllers\CalidadyGarantiaController.cs" />
-    <Compile Include="Controllers\ComoTrabajamosController.cs" />
-    <Compile Include="Controllers\ConsultoriaController.cs" />
-    <Compile Include="Controllers\ContactoController.cs" />
-    <Compile Include="Controllers\CulturaController.cs" />
-    <Compile Include="Controllers\DesarrollodeSoftwareController.cs" />
-    <Compile Include="Controllers\DiseniodePaginasWebController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\HostingyDominioController.cs" />
-    <Compile Include="Controllers\IntranetyExtranetController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="Controllers\NosotrosController.cs" />
-    <Compile Include="Controllers\PaginaWebCatalogoController.cs" />
-    <Compile Include="Controllers\PaginaWebCorporativaController.cs" />
-    <Compile Include="Controllers\SoporteyMantenimientoController.cs" />
-    <Compile Include="Controllers\TiendasVirtualesController.cs" />
     <Compile Include="C__MigrationHistory.cs">
       <DependentUpon>MGconsultoresModel.tt</DependentUpon>
     </Compile>
@@ -251,7 +235,6 @@
     <Content Include="images\clientes-satisfechos-sistemas.jpg" />
     <Content Include="images\cloud-hosting-for-businesses.jpg" />
     <Content Include="images\consultor-it.png" />
-    <Content Include="images\Contacto-3d.jpg" />
     <Content Include="images\default-image.jpg" />
     <Content Include="images\desarrollo-aplicaciones-moviles.png" />
     <Content Include="images\desarrollo-aplicaciones-moviles1.png" />
@@ -353,22 +336,25 @@
     <Content Include="Content\Pagina-Web-Corporativa.css" />
     <Content Include="Content\Soporte-y-Mantenimiento.css" />
     <Content Include="Content\Tiendas-Virtuales.css" />
-    <Content Include="Views\AplicacionesMoviles\Index.cshtml" />
-    <Content Include="Views\AplicacionesWeb\Index.cshtml" />
-    <Content Include="Views\CalidadyGarantia\Index.cshtml" />
-    <Content Include="Views\ComoTrabajamos\Index.cshtml" />
-    <Content Include="Views\Consultoria\Index.cshtml" />
-    <Content Include="Views\Contacto\Index.cshtml" />
-    <Content Include="Views\Cultura\Index.cshtml" />
-    <Content Include="Views\DesarrollodeSoftware\Index.cshtml" />
-    <Content Include="Views\DiseniodePaginasWeb\Index.cshtml" />
-    <Content Include="Views\HostingyDominio\Index.cshtml" />
-    <Content Include="Views\IntranetyExtranet\Index.cshtml" />
-    <Content Include="Views\Nosotros\Index.cshtml" />
-    <Content Include="Views\PaginaWebCatalogo\Index.cshtml" />
-    <Content Include="Views\PaginaWebCorporativa\Index.cshtml" />
-    <Content Include="Views\SoporteyMantenimiento\Index.cshtml" />
-    <Content Include="Views\TiendasVirtuales\Index.cshtml" />
+    <Content Include="Views\Home\Aplicaciones-Moviles.html" />
+    <Content Include="Views\Home\Aplicaciones-Web.html" />
+    <Content Include="Views\Home\Calidad-y-Garantía.html" />
+    <Content Include="Views\Home\Como-Trabajamos.html" />
+    <Content Include="Views\Home\Consultoria.html" />
+    <Content Include="Views\Home\Contacto.html" />
+    <Content Include="Views\Home\Cultura.html" />
+    <Content Include="Views\Home\Desarrollo-de-Software.html" />
+    <Content Include="Views\Home\Diseño-de-Paginas-Web.html" />
+    <Content Include="Views\Home\Hosting-y-Dominio.html" />
+    <Content Include="Views\Home\index.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\Home\Intranet-y-Extranet.html" />
+    <Content Include="Views\Home\Nosotros.html" />
+    <Content Include="Views\Home\Pagina-Web-Catalogo.html" />
+    <Content Include="Views\Home\Pagina-Web-Corporativa.html" />
+    <Content Include="Views\Home\Soporte-y-Mantenimiento.html" />
+    <Content Include="Views\Home\Tiendas-Virtuales.html" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -405,11 +391,10 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Shared\_Menu.cshtml" />
+    <Content Include="Views\Home\Index - Copia.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Log\Error\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

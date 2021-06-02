@@ -9,7 +9,6 @@ using System.Web.Mvc;
 using System.Net.Mail;
 using System.Net.Mime;
 using System.Net;
-using System.Configuration;
 
 namespace MGconsultores.Controllers
 {
@@ -74,33 +73,29 @@ namespace MGconsultores.Controllers
 
         private void EnviarCorreo(ComentarioModel model)
         {
-            string mailFrom = ConfigurationManager.AppSettings["mailFrom"];
-            string mailHost = ConfigurationManager.AppSettings["mailHost"];
-            string mailPass = ConfigurationManager.AppSettings["mailPass"];
-            string mailTo = ConfigurationManager.AppSettings["mailTo"];
 
             MailMessage email = new MailMessage();
             SmtpClient smtp = new SmtpClient();
 
-            //email.To.Add(new MailAddress(model.Correo));
-            email.From = new MailAddress(mailFrom);
-            email.Subject = "MG Consultores - Notificación (" + DateTime.Now.ToString("dd / MMM / yyy hh:mm:ss") + ")";
+            email.To.Add(new MailAddress(model.Correo));
+            email.From = new MailAddress("contacto@mg-consultores.pe");
+            email.Subject = "Notificación ( " + DateTime.Now.ToString("dd / MMM / yyy hh:mm:ss") + " ) ";
             email.SubjectEncoding = System.Text.Encoding.UTF8;
-            email.Body = String.Concat(model.Mensaje, " | ", model.Correo); // "Tu mensaje | tu firma";
+            email.Body = model.Mensaje; // "Tu mensaje | tu firma";
             email.IsBodyHtml = true;
             email.Priority = MailPriority.Normal;
             //FileStream fs = new FileStream("E:\\TestFolder\\test.pdf", FileMode.Open, FileAccess.Read);
             //Attachment a = new Attachment(fs, "test.pdf", MediaTypeNames.Application.Octet);
             //email.Attachments.Add(a);
 
-            smtp.Host = mailHost;  
+            smtp.Host = "mail.mg-consultores.pe";  
             smtp.Port = 25;
             smtp.Timeout = 50;
             smtp.EnableSsl = false;
             smtp.UseDefaultCredentials = false;
-            smtp.Credentials = new NetworkCredential(mailFrom, mailPass);
+            smtp.Credentials = new NetworkCredential("contacto@mg-consultores.pe", "Zlatan2016");
 
-            string lista = mailTo;
+            string lista = "contacto@mg-consultores.pe; miguel.gargurevich@gmail.com";
             string output = string.Empty;
 
             var mails = lista.Split(';');
@@ -115,13 +110,11 @@ namespace MGconsultores.Controllers
             }
             catch (SmtpException exm)
             {
-                string error = CapturarError(exm, "Home", "EnviarComentario");
-                output = String.Concat("No se puede enviar correos por el momento: ", error);
+                CapturarError(exm, "Home", "EnviarComentario");
             }
             catch (Exception ex)
             {
-                string error = CapturarError(ex, "Home", "EnviarComentario");
-                output = String.Concat("No se puede enviar correos por el momento: ", error);
+                CapturarError(ex, "Home", "EnviarComentario");
             }
 
         }
