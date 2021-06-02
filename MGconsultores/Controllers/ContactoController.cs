@@ -1,39 +1,95 @@
 ﻿using MGconsultores.Models;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.IO;
 using System.Linq;
+using System.Net;
+using System.Net.Mail;
 using System.Text;
 using System.Web;
 using System.Web.Mvc;
-using System.Net.Mail;
-using System.Net.Mime;
-using System.Net;
-using System.Configuration;
 
 namespace MGconsultores.Controllers
 {
-    public class HomeController : Controller
+    public class ContactoController : Controller
     {
-        MGconsultoresEntities _db;
-
+        // GET: Contacto
         public ActionResult Index()
         {
             return View();
         }
 
-        public ActionResult About()
+        // GET: Contacto/Details/5
+        public ActionResult Details(int id)
         {
-            ViewBag.Message = "Your application description page.";
-
             return View();
         }
 
-        public ActionResult Contact()
+        // GET: Contacto/Create
+        public ActionResult Create()
         {
-            ViewBag.Message = "Your contact page.";
-
             return View();
+        }
+
+        // POST: Contacto/Create
+        [HttpPost]
+        public ActionResult Create(FormCollection collection)
+        {
+            try
+            {
+                // TODO: Add insert logic here
+
+                return RedirectToAction("Index");
+            }
+            catch
+            {
+                return View();
+            }
+        }
+
+        // GET: Contacto/Edit/5
+        public ActionResult Edit(int id)
+        {
+            return View();
+        }
+
+        // POST: Contacto/Edit/5
+        [HttpPost]
+        public ActionResult Edit(int id, FormCollection collection)
+        {
+            try
+            {
+                // TODO: Add update logic here
+
+                return RedirectToAction("Index");
+            }
+            catch
+            {
+                return View();
+            }
+        }
+
+        // GET: Contacto/Delete/5
+        public ActionResult Delete(int id)
+        {
+            return View();
+        }
+
+        // POST: Contacto/Delete/5
+        [HttpPost]
+        public ActionResult Delete(int id, FormCollection collection)
+        {
+            try
+            {
+                // TODO: Add delete logic here
+
+                return RedirectToAction("Index");
+            }
+            catch
+            {
+                return View();
+            }
         }
 
         [HttpPost]
@@ -93,7 +149,7 @@ namespace MGconsultores.Controllers
             //Attachment a = new Attachment(fs, "test.pdf", MediaTypeNames.Application.Octet);
             //email.Attachments.Add(a);
 
-            smtp.Host = mailHost;  
+            smtp.Host = mailHost;
             smtp.Port = 25;
             smtp.Timeout = 50;
             smtp.EnableSsl = false;

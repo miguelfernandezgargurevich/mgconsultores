@@ -16,7 +16,7 @@
 
 .u-section-1 .u-image-1 {
   min-height: 452px;
-  background-image: url("images/macbook-ecommerce.png");
+  background-image: url("../images/macbook-ecommerce.png");
   background-position: 50% 50%;
   animation-duration: 1000ms;
 }
@@ -146,7 +146,7 @@
 .u-section-2 .u-image-1 {
   width: 300px;
   height: 300px;
-  background-image: url("images/9d63430d-8f5d-4697-9139-18d3979ac77d.jpg");
+  background-image: url("../images/9d63430d-8f5d-4697-9139-18d3979ac77d.jpg");
   background-position: 50% 50%;
   animation-duration: 1000ms;
   margin: 0 auto;
@@ -240,7 +240,7 @@
 
 .u-section-3 .u-image-1 {
   min-height: 409px;
-  background-image: url("images/fidelizacion-de-clientes.jpg");
+  background-image: url("../images/fidelizacion-de-clientes.jpg");
   background-position: 50% 50%;
   animation-duration: 1000ms;
 }
